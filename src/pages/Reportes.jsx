@@ -34,7 +34,7 @@ export default function Reportes() {
           {reportes.map((r, i) => (
             <tr key={i} className="text-center">
               <td className="border p-2">{r.mes}</td>
-              <td className="border p-2">${r.total_ventas}</td>
+              <td className="border p-2">Bs {r.total_ventas}</td>
             </tr>
           ))}
         </tbody>

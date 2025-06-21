@@ -64,7 +64,7 @@ export default function PagosForm() {
           <option value="">Selecciona un pedido</option>
           {pedidos.map((p) => (
             <option key={p.id} value={p.id}>
-              {p.clientes?.nombre || 'Sin cliente'} | Entrega: {p.fecha_entrega} | Estado: {p.estado} | Total: ${p.total}
+              {p.clientes?.nombre || 'Sin cliente'} | Entrega: {p.fecha_entrega} | Estado: {p.estado} | Total: Bs {p.total}
             </option>
           ))}
         </select>

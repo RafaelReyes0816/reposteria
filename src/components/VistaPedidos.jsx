@@ -41,7 +41,7 @@ export default function VistaPedidos() {
               <td className="border p-2">{p.clientes?.nombre || 'Sin nombre'}</td>
               <td className="border p-2">{p.fecha_entrega}</td>
               <td className="border p-2">{p.estado}</td>
-              <td className="border p-2">${p.total}</td>
+              <td className="border p-2">Bs{p.total}</td>
             </tr>
           ))}
         </tbody>
