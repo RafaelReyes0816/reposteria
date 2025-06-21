@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className="bg-white shadow mb-8 sticky top-0 z-50">
       <nav className="container mx-auto flex items-center justify-between py-4 px-4">
-        <span className="font-bold text-xl text-pink-600">Repostería</span>
+        <Link to="/" className="font-bold text-xl text-pink-600 hover:text-pink-700 transition">
+          Repostería
+        </Link>
         <div className="space-x-2 flex items-center flex-wrap">
           <NavLink
             to="/"
